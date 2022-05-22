@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import './App.scss';
 import { OpenAIApi, Configuration } from 'openai'; 
 
+console.log(process.env.REACT_APP_API_KEY)
+
+// openai.api_key = os.environ["OPENAI_API_KEY"]
 function App() {
   const [data, setdata] = useState([]);
   const [isLoading, setisLoading] = useState(false);
@@ -11,8 +14,10 @@ function App() {
     const formdeets = new FormData(e.target),
       formdeetsobj = Object.fromEntries(formdeets.entries());
     // API
+
+    debugger;
     const configuration = new Configuration({
-      apiKey: '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',
+    apiKey: `${process.env.REACT_APP_API_KEY}`,
     });
     const openAi = new OpenAIApi(configuration);
     setisLoading(true);
