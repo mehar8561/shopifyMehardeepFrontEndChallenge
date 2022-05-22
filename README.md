@@ -1,4 +1,4 @@
-<h1 align="center">Fun With GPT-3</h1>
+<h1 align="center">shopify</h1>
 
 <div align="center">
      <a href="https://fun-with-gpt-3-weld.vercel.app/" target="_blank">Live Preview</a>
