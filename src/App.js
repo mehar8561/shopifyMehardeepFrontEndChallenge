@@ -12,7 +12,7 @@ function App() {
       formdeetsobj = Object.fromEntries(formdeets.entries());
     // API
     const configuration = new Configuration({
-      apiKey: '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',
+      apiKey: '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',
     });
     const openAi = new OpenAIApi(configuration);
     setisLoading(true);
